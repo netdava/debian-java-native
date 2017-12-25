@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    compile 'com.github.jnr:jnr-ffi:2.1.7'
+
+    testCompile 'junit:junit:4.12'
+}
+
+task execute(type: JavaExec) {
+    main = mainClass
+    classpath = sourceSets.main.runtimeClasspath
+}
