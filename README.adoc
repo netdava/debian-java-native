@@ -1,0 +1,5 @@
+debian-java-native
+==================
+
+
+Access Debian packages and apt system using apt-pkg library and JNA.
